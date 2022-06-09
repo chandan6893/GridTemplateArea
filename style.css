@@ -1,0 +1,62 @@
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+.containerZ{
+    background-color: aquamarine;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 280px 280px 280px;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    grid-template-rows: 280px 280px 280px 120px ;
+    /* grid-auto-rows:repeat(auto-fill, minmax(200px, 1fr) ) ; */
+    grid-template-areas: "A A A A"
+                         "B C D E"
+                         "F G H I"
+                         "J J J J";
+    gap: 5px;}
+
+
+.header{
+    grid-area: A;
+    background-image:url(/photu/Fuji_LPHero_FD21_en_US.jpg);}
+    
+#sect1{
+    grid-area: B;
+    box-sizing: border-box;
+    padding: 60px;
+    background-image:url(photu/197102040.png) ;
+}
+#sect2{
+    grid-area: C;
+    background: url(/photu/322396794.png);
+}
+#sect3{
+    grid-area: D;
+    background:url(/photu/398409236.png);
+}
+#sect4{
+    grid-area: E;
+    background: url(/photu/172063969.png);
+}
+#sect5{
+    grid-area: F;
+    background: url(/photu/247531826.png);
+}
+#sect6{
+    grid-area: G;
+    background:url(/photu/258726044.jpg);
+}
+#sect7{grid-area: H;
+    background: url(/photu/263466787.png);
+}
+#sect8{
+    grid-area: I;
+    background: url(/photu/298812796.png);
+}
+footer{
+    grid-area: J;
+    background: url(/photu/LP_Deals_EN.jpg);
+    text-align: center;
+}  
